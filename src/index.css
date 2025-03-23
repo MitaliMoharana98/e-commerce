@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-primary;
+  }
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url('https://img.freepik.com/free-photo/woman-model-business-suit-wearing-hat_1303-17693.jpg');
+  }
+  50% {
+    background-image: url('https://img.freepik.com/premium-photo/woman-buys-dress-online-with-tablet-concept-modern-ecommerce-clothing-website-living-room-background_176814-1624.jpg');
+  }
+  100% {
+    background-image: url('https://img.freepik.com/free-photo/arrangement-black-friday-shopping-carts-with-copy-space_23-2148667047.jpg');
+  }
+}
+.bg-animation {
+  background-size: cover;
+  background-position: center;
+  animation: backgroundAnimation 6s infinite alternate ease-in-out;
+}
